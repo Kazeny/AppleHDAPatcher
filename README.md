@@ -1,6 +1,6 @@
 ![alt text](http://i58.tinypic.com/wjb9j4.png)
 
-###  AppleHDAPatcher - v1.2
+###  AppleHDAPatcher - v1.3
 
 
 
