@@ -81,5 +81,6 @@ In AppleHDAPatcher.app/Contents/Resources there must be an updated original Appl
 
 ##### Credits: Oldnaplam,bcc9,cecekpawon.
  
+ [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=K4M7MJFLXUU6Y)
 
 
