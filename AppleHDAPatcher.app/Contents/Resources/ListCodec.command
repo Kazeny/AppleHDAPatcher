@@ -4,8 +4,6 @@
 #
 # Credits: cecekpawon
 #
-# PCI ids : https://github.com/pciutils/pciids
-#
 # Using in AppleHAPatcher.app to identify installed audio codecs
 #
 # Mandatory Requirements:
@@ -18,6 +16,7 @@ aONBOARD=(
   [0x10138409]="Cirrus Logic CS8409"
   [0x10ec0233]="Realtek ALC233"
   [0x10ec0235]="Realtek ALC235"
+  [0x10ec0236]="Realtek ALC236"
   [0x10ec0255]="Realtek ALC255"
   [0x10ec0260]="Realtek ALC260"
   [0x10ec0262]="Realtek ALC262"
@@ -44,7 +43,7 @@ aONBOARD=(
   [0x10ec0899]="Realtek ALC898"
   [0x10ec0900]="Realtek ALC1150"
   [0x10de1220]="Realtek ALC1220"
-  [0x10ec1168]="Realtek ALC1220A"
+  [0x10ec1168]="Realtek ALCS1220A"
   [0x11060441]="VT2021"
   [0x11068446]="VIA VT1802"
   [0x111d7603]="IDT 992HD75B3X5"
@@ -109,7 +108,27 @@ aHDMI=(
   [0x10de0070]="GPU 70"
   [0x10de0071]="GPU 71"
   [0x10de0072]="GPU 72"
+  [0x10de0073]="GPU 73"
+  [0x10de0074]="GPU 74"
+  [0x10de0076]="GPU 76"
+  [0x10de007b]="GPU 7b"
+  [0x10de007c]="GPU 7c"
   [0x10de007d]="GPU 7d"
+  [0x10de070e]="GPU 7e"
+  [0x10de0080]="GPU 80"
+  [0x10de0081]="GPU 81"
+  [0x10de0082]="GPU 82"
+  [0x10de0083]="GPU 83"
+  [0x10de0084]="GPU 84"
+  [0x10de0090]="GPU 90"
+  [0x10de0091]="GPU 91"
+  [0x10de0092]="GPU 92"
+  [0x10de0093]="GPU 93"
+  [0x10de0094]="GPU 94"
+  [0x10de0095]="GPU 95"
+  [0x10de0097]="GPU 97"
+  [0x10de0098]="GPU 98"
+  [0x10de0099]="GPU 99"
   [0x10de8001]="MCP73"
   [0x11069f80]="VX900"
   [0x11069f81]="VX900"
