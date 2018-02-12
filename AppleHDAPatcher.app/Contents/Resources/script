@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 # 
-# Maintained by: Mironeⓒ
+# Maintained by: Mirone (c) 2014-2018
 # 
 # Credits: Oldnapalm,bcc9
 # 
@@ -8,10 +8,11 @@
 $dir = $ARGV[0];
 if(!$dir) {
 	
-	print"\t\t\t           AppleHDAPatcher - v1.3\n";
-	print"\t\t\t  Drag codec folder on window to process it \n\n\n";
+	print"\t\t\t           AppleHDAPatcher - v1.4\n";
+	print"\t\t\t  Drag codec folder on window to process it \n\n\n\n";
+	print"------------------------------------------------------------------------\n\n";
 	
-	system("./ListCodec.command");
+	system("./ListCodec.command\n");
 }
 
 foreach $dir(@ARGV) {
@@ -82,6 +83,9 @@ foreach $dir(@ARGV) {
 	system("cd ~/Desktop && zip -r ".$name.".zip ".$name.">/dev/null");
 	system("rm -r ".$basepath);
 	print "Done.\n\n";
+	print"------------------------------------------------------------------------\n\n";
+	print "Donate: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=K4M7MJFLXUU6Y\n";
+	
 	
 }
 sub bingen {

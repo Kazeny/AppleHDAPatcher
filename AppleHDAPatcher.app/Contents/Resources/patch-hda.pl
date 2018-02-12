@@ -147,6 +147,23 @@ my @codec_compares_osx1012 = (
     0x11d4198b,
     0x10de0000,
     );
+my @codec_compares_osx1013 = (
+	0x8384767f,
+	0x1002aa01,
+	0x83847680,
+	0x1aec8800,
+	0x15ad1975,
+	0x10134206,
+	0x10134208,
+	0x10ec0261,
+	0x10ec0262,
+	0x10ec0885,
+	0x11d41984,
+	0x11d4198a,
+	0x11d4198b,
+	0x10de0000,
+	);
+	
 
 my @codec_compares = ();
 my @ranges = ();
@@ -356,9 +373,11 @@ sub osvers
 	chomp($kextvers = `/usr/libexec/PlistBuddy -c 'Print CFBundleShortVersionString' $kextversfile`);
 	if ($verbose) {
 	    printf "kext version %s\n", $kextvers;
-	}
-	if ($kextvers >= "275.68") {
-        return("10.12");
+	
+	}if ($kextvers >= "280.12") {
+        return("10.13.3");
+	} elsif ($kextvers >= "275.68") {
+		return("10.12");
     } elsif ($kextvers >= "272.36") {
 	    return("10.11");
 	} elsif ($kextvers >= "272") {
