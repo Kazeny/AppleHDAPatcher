@@ -375,7 +375,7 @@ sub osvers
 	    printf "kext version %s\n", $kextvers;
 	
 	}if ($kextvers >= "280.12") {
-        return("10.13.3");
+        return("10.13");
 	} elsif ($kextvers >= "275.68") {
 		return("10.12");
     } elsif ($kextvers >= "272.36") {
@@ -509,6 +509,9 @@ retry:
     }
     elsif ($osxvers lt "10.12.9"){
     @codec_compares = @codec_compares_osx1012;
+    }
+    elsif ($osxvers lt "10.13.9"){
+    @codec_compares = @codec_compares_osx1013;
     }
     elsif ($osxvers < "10.7.5") {
     @codec_compares = @codec_compares_osx107;
